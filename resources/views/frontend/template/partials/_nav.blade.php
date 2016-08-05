@@ -17,7 +17,7 @@
                     <li><a href="{{ route('about-us') }}">Sobre Nós</a></li>
                     <li><a href="{{ route('courses') }}">Cursos</a></li>
                     <li><a href="{{ route('calendars') }}">Calendário</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="{{ route('contact') }}">Contato</a></li>
                 </ul>
             </div>
         </div>

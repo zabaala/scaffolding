@@ -14,4 +14,6 @@
 Route::get('/', ['as'=>'index', 'uses'=>'Site\HomeController@index']);
 Route::get('/institucional', ['as'=>'about-us', 'uses'=>'Site\CompanyController@index']);
 Route::get('/cursos-para-voce', ['as'=>'courses', 'uses'=>'Site\CoursesController@index']);
+Route::get('/curso/{slug}', ['as'=>'course-details', 'uses'=>'Site\CoursesController@details']);
 Route::get('/calendario-de-cursos', ['as'=>'calendars', 'uses'=>'Site\CalendarsController@index']);
+Route::get('/fale-conosco', ['as'=>'contact', 'uses'=>'Site\ContactController@index']);

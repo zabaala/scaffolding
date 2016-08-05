@@ -39,4 +39,16 @@ class CoursesController extends Controller
     public function index() {
         return $this->view('frontend.courses');
     }
+
+    /**
+     * Show course details page.
+     * @param $slug
+     * @return mixed
+     */
+    public function details($slug) {
+        $this->meta_title = 'Curso: ' . $slug;
+        $this->theme_show_courses = true;
+
+        return $this->view('frontend.course');
+    }
 }
