@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as'=>'index', 'uses'=>'Site\HomeController@index']);
+Route::get('/about-us', ['as'=>'about-us', 'uses'=>'Site\CompanyController@index']);
