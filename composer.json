@@ -1,9 +1,18 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "dotsyntax/scaffolding",
+    "description": "dot.Syntax Project Scaffolding to learn about Laravel Framework.",
+    "authors": [
+        {
+            "name": "Mauricio Rodrigues",
+            "email": "mauricio.vsr@gmail.com",
+            "homepage": "http://fb.me/zabaala",
+            "role": "Developer"
+        }
+    ],
+    "keywords": ["dotsyntax", "dot", "syntax", "project", "scaffolding"],
     "license": "MIT",
     "type": "project",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*"
