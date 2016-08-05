@@ -15,7 +15,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ route('index') }}">Início</a></li>
                     <li><a href="{{ route('about-us') }}">Sobre Nós</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="{{ route('courses') }}">Cursos</a></li>
                     <li><a href="calendario.html">Calendário</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>

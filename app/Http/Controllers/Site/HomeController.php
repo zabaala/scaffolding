@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     /**
      * Show dotSyntax homepage.
-     * @return Reponse
+     * @return mixed
      */
     public function index() {
         return $this->view('frontend.index');

@@ -12,4 +12,5 @@
 */
 
 Route::get('/', ['as'=>'index', 'uses'=>'Site\HomeController@index']);
-Route::get('/about-us', ['as'=>'about-us', 'uses'=>'Site\CompanyController@index']);
+Route::get('/institucional', ['as'=>'about-us', 'uses'=>'Site\CompanyController@index']);
+Route::get('/cursos-para-voce', ['as'=>'courses', 'uses'=>'Site\CoursesController@index']);
