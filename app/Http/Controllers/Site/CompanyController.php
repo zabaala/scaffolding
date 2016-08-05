@@ -9,10 +9,18 @@ use App\Http\Controllers\Controller;
 class CompanyController extends Controller
 {
     /**
+     * Override field in class Controller.
+     * @var string
+     */
+    public $theme_actual_section = 'Institucional';
+
+    
+
+    /**
      * Show the about company page.
-     * @return Reponse
+     * @return mixed
      */
     public function index() {
-        return view('frontend.company', ['title'=>'Institucional']);
+        return $this->view('frontend.company');
     }
 }
