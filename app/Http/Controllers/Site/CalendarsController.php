@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Http\Controllers\Controller;
-
-
-class CalendarsController extends Controller
+class CalendarsController extends BaseController
 {
     /**
      * Override field in class Controller.

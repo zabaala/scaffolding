@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Http\Controllers\Controller;
 
-
-
-class CompanyController extends Controller
+class CompanyController extends BaseController
 {
     /**
      * Override field in class Controller.
@@ -14,7 +11,7 @@ class CompanyController extends Controller
      */
     public $theme_actual_section = 'Institucional';
 
-    
+
 
     /**
      * Show the about company page.

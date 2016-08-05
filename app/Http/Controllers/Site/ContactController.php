@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Http\Controllers\Controller;
 
-
-class ContactController extends Controller
+class ContactController extends BaseController
 {
     /**
      * Override field in class Controller.

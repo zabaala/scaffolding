@@ -17,3 +17,9 @@ Route::get('/cursos-para-voce', ['as'=>'courses', 'uses'=>'Site\CoursesControlle
 Route::get('/curso/{slug}', ['as'=>'course-details', 'uses'=>'Site\CoursesController@details']);
 Route::get('/calendario-de-cursos', ['as'=>'calendars', 'uses'=>'Site\CalendarsController@index']);
 Route::get('/fale-conosco', ['as'=>'contact', 'uses'=>'Site\ContactController@index']);
+
+Route::group(['prefix'=>'backend'], function(){
+   Route::get('index', function(){
+       return 'backend index';
+   });
+});

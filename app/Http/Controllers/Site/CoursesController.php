@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Http\Controllers\Controller;
 
-
-
-class CoursesController extends Controller
+class CoursesController extends BaseController
 {
     /**
      * Override field in class Controller.
