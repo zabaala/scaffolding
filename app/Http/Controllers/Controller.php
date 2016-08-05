@@ -47,14 +47,16 @@ class Controller extends BaseController
         return view($view, $data, $mergeData);
     }
 
+    /**
+     * Generate a array with default data to be passed to templates & views.
+     * @return array
+     */
     final private function defaultMetaData() {
-        $array = [
+        return [
             'meta_title' => $this->meta_title,
             'meta_description' => $this->meta_description,
             'theme_actual_section' => $this->theme_actual_section,
             'theme_show_courses' => $this->theme_show_courses
         ];
-
-        return $array;
     }
 }
