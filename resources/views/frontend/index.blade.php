@@ -1,7 +1,37 @@
 @extends('frontend.template.default')
 
 @section('content')
-    <div class="banner">
+    <div
+            class="banner cycle-slideshow"
+            data-cycle-carousel-visible="1"
+            data-cycle-timeout="5000"
+            data-cycle-swipe="true"
+            data-cycle-swipe-fx="scrollHorz"
+            data-cycle-fx="fade"
+            data-cycle-slides=">figure"
+        >
+        <figure>
+            <img src="{{ asset('dotsyntax-theme/assets/imgs/banners/b1.jpg') }}" alt="Route the World with Mikrotik">
+            <div class="container">
+                <figcaption>
+                    <h5>cursos</h5>
+                    <h1><a href="curso.html">Route the World with Mikrotik</a></h1>
+                    <a href="curso.html" class="btn btn-default btn-lg hidden-sm hidden-xs">saiba mais</a>
+                </figcaption>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="{{ asset('dotsyntax-theme/assets/imgs/banners/b2.jpg') }}" alt="Windows Server 2012">
+            <div class="container">
+                <figcaption>
+                    <h5>cursos</h5>
+                    <h1><a href="curso.html">Windows Server 2012</a></h1>
+                    <a href="curso.html" class="btn btn-default btn-lg hidden-sm hidden-xs">saiba mais</a>
+                </figcaption>
+            </div>
+        </figure>
+
         <figure>
             <img src="{{ asset('dotsyntax-theme/assets/imgs/banners/b3.jpg') }}" alt="Formação PHP com Laravel">
             <div class="container">
@@ -66,4 +96,8 @@
         </div>
     </section>
 
+@endsection
+
+@section('scripts')
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
 @endsection
