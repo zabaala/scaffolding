@@ -1,0 +1,25 @@
+body{
+    font-family: 'Lato';
+    padding-top: 40px;
+}
+.jumbotron.title{
+    background: #6f5499;
+    color: white;
+}
+.jumbotron.title a{
+    margin-top: 20px;
+}
+.alert{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.cancel{color: white;}
+footer{
+    background: white;
+    height: 50px;
+    margin-bottom: 15px;
+    border-top: 1px solid #ededed;
+}
+footer p{
+    padding-bottom: 5px;
+}
